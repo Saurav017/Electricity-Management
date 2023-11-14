@@ -1,0 +1,316 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #ddd;
+    position: relative;
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    color: blue;
+}
+
+header div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    position: relative;
+}
+
+header div p{
+    padding-right: 10px;
+}
+
+header div a{
+    background-color: orangered;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 5rem;
+}
+
+main .heading {
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: blue;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+
+main .bill__table   {
+    padding: 20px 0;
+}
+
+main .bill__table table{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-radius: 20px 20px 0 0;
+}
+
+main .bill__table table tr{
+    padding: 10px;
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    font-size: 1.5rem;
+}
+
+main .bill__table table tr:nth-child(1){
+    background-color: #ddd;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 20px 20px 0 0;
+}
+
+main .bill__table table tr th {
+    padding: 10px 0;
+}
+
+main .bill__table table tr td{
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.amt_div  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pay__btn__div {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay__btn__div a{
+    min-width: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    word-spacing: 2px;
+}
+
+.pay__btn__div a:hover{
+    background-color: #fff  ;
+    color: blue;
+    border: 1px solid blue;
+}
+
+
+
+
+
+/* ------------------------------------------ */
+
+/* Register.html */
+.form__div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    
+}
+
+.heading__div {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    background-color: blue;
+    padding-left: 8%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 20px 0;
+}
+
+
+.subHeading__div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: blue;
+    padding-left: 2%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+hr{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.input__div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.outer__div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.input__div div{
+    display: flex;
+    align-items: flex-end;  
+    margin-bottom: 20px;
+}
+
+.input__div div:nth-child(1)    {
+    justify-self: flex-end;
+}
+
+.input__div div label{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.input__div div label sup {
+    color-scheme: red;
+    font-size: 0.8rem;
+}
+.input__div div input, .input__div div select , .cnf__pass__div input {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    outline: none;
+    
+}
+
+
+.mobile__div    {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.cnf__pass__div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2%;
+}
+
+.auth__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.auth__btn button{
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+.outer__mobile__div    {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.outer__mobile__div .mobile__div{
+    margin-bottom: 0;
+}
