@@ -1,3 +1,19 @@
+:root   {
+    --nav-color: #ddd;
+    --nav-text-color: #000;
+    --nav-hover-color: blue;
+    --authbtn-color: orangered;
+    --authbtn-text-color: #fff;
+    --authbtn-hover-color: #fff;
+    --authbtn-hover-text-color: orangered;
+    --main-bg-color: #fff;
+    --sub-bg-color: blue;
+    --main-text-color: #000;
+    --sub-text-color: orangered;
+    --tertiary-text-color: #fff;
+}
+
+
 *   {
     margin: 0;
     padding: 0;
@@ -314,3 +330,143 @@ hr{
 .outer__mobile__div .mobile__div{
     margin-bottom: 0;
 }
+
+
+/* -----------------Paybill.html------------------------------- */
+
+.sub__text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.sub__text a{
+    text-decoration: none;
+    color: var(--tertiary-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: var(--sub-bg-color);
+    padding: 7px 12px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub__text a:hover{
+    background-color: var(--primary-btn-hover-color);
+}
+
+.final__details__div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.final__details__div div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.final__details__div div {
+    padding: 10px 100px 10px 30px;
+}
+
+.final__details__div div span   {
+    color: var(--sub-text-color);
+}
+
+.final__details__div div:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: black;
+    color: var(--tertiary-text-color);
+}
+
+.final__details__div div:not(:nth-child(1)) {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--nav-color);
+    border-bottom: 1px solid black;
+}
+
+.final_bill_table_div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.final_bill_table_div table {
+    width: fit-content;
+    height: fit-content;
+}
+
+.final_bill_table_div table tr th{
+
+
+}
+
+.final_bill_table_div table tr td {
+
+
+}
+
+.payment_mode_div   {
+    background-color: var(--nav-color);
+    width: 100%;
+    min-height: 100px;
+
+}
+.payment_mode_input {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.payment_mode_input span {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+
+.payment_mode_input span input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.auth__btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: var(--sub-bg-color);
+    padding: 10px 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* --------------  Payment Screen--------------------- */
+
+
+/* --------------------Payment Done Successfully------------------------- */
+
+
