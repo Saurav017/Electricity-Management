@@ -1,16 +1,16 @@
 :root   {
-    --nav-color: #ddd;
-    --nav-text-color: #000;
-    --nav-hover-color: blue;
+    --nav-color: #D7D7D7;
+    --nav-text-color: #8E8E8E;
+    --nav-hover-color: #0395D9;
     --authbtn-color: orangered;
-    --authbtn-text-color: #fff;
-    --authbtn-hover-color: #fff;
+    --authbtn-text-color: #F6F6F6;
+    --authbtn-hover-color: #F6F6F6;
     --authbtn-hover-text-color: orangered;
-    --main-bg-color: #fff;
-    --sub-bg-color: blue;
-    --main-text-color: #000;
+    --main-bg-color: #F6F6F6;
+    --sub-bg-color: #0395D9;
+    --main-text-color: #8E8E8E;
     --sub-text-color: orangered;
-    --tertiary-text-color: #fff;
+    --tertiary-text-color: #F6F6F6;
 }
 
 
@@ -20,12 +20,17 @@
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+body    {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
-    background-color: #ddd;
+    background-color: var(--nav-color);
     position: relative;
 }
 
@@ -44,7 +49,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: var(--nav-text-color);
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -60,7 +65,7 @@ header div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 10%;
+    padding: 10px 5%;
     position: relative;
 }
 
@@ -81,19 +86,24 @@ header div a{
 }
 
 main{
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 5rem;
+}
+
+.heading    {
+    position: relative;
+    width: 99%;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
 main .heading {
     font-size: 2rem;
     font-weight: 500;
-    background-color: blue;
-    padding: 5px 20px;
-    color: #fff;
+    background-color: var(--sub-bg-color);
+    padding: 5px 30px;
+    color: var(--tertiary-text-color);
 }
 
 
@@ -102,9 +112,9 @@ main .bill__table   {
 }
 
 main .bill__table table{
-    width: 100%;
+    width: 99%;
+    margin: 0 auto;
     background-color: #fff;
-    border: 1px solid #ddd;
     border-collapse: collapse;
     border-radius: 20px 20px 0 0;
 }
@@ -113,21 +123,29 @@ main .bill__table table tr{
     padding: 10px;
     text-align: center;
     background-color: #ddd;
-    border: 1px solid #ddd;
     font-size: 1.5rem;
 }
 
 main .bill__table table tr:nth-child(1){
-    background-color: #ddd;
+    background-color: var(--main-text-color);
     color: #fff;
-    font-size: 1.5rem;
-    border: 1px solid #ddd;
+    font-size: 1.3rem;
     border-radius: 20px 20px 0 0;
 }
 
 main .bill__table table tr th {
     padding: 10px 0;
 }
+
+main .bill__table table th:first-child{
+    border-top-left-radius: 15px;
+}
+
+main .bill__table table th:last-child{
+    border-top-right-radius: 15px;
+}
+
+
 
 main .bill__table table tr td{
     padding: 10px;
@@ -137,11 +155,13 @@ main .bill__table table tr td{
     font-size: 1.1rem;
 }
 
+
 .amt_div  {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width:100%;
+    width:99%;
+    margin: 0 auto 30px;
     color: red;
     font-size: 1.2rem;
     font-weight: 500;
@@ -156,13 +176,13 @@ main .bill__table table tr td{
 
 .pay__btn__div a{
     min-width: 100px;
-    background-color: blue;
+    background-color: var(--sub-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
+    color: var(--main-bg-color);
     font-size: 18px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -170,13 +190,6 @@ main .bill__table table tr td{
     cursor: pointer;
     word-spacing: 2px;
 }
-
-.pay__btn__div a:hover{
-    background-color: #fff  ;
-    color: blue;
-    border: 1px solid blue;
-}
-
 
 
 
@@ -186,7 +199,6 @@ main .bill__table table tr td{
 /* Register.html */
 .form__div{
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;    
@@ -198,8 +210,8 @@ main .bill__table table tr td{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #fff;
-    background-color: blue;
+    color: var(--tertiary-text-color);
+    background-color: var(--sub-bg-color);
     padding-left: 8%;
     font-size: 1.5rem;
     font-weight: 500;
@@ -212,7 +224,7 @@ form {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: var(--main-bg-color);
     padding: 20px 0;
 }
 
@@ -222,7 +234,7 @@ form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: blue;
+    color: var(--sub-bg-color);
     padding-left: 2%;
     font-size: 1.5rem;
     font-weight: 400;
@@ -232,7 +244,7 @@ hr{
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--main-text-color);
 }
 
 .input__div {
@@ -258,7 +270,10 @@ hr{
 }
 
 .input__div div:nth-child(1)    {
-    justify-self: flex-end;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .input__div div label{
@@ -267,14 +282,14 @@ hr{
     padding-right: 10px;
 }
 
-.input__div div label sup {
-    color-scheme: red;
+.input__div div label span, .cnf__pass__div div label span {
+    color: red;
     font-size: 0.8rem;
 }
 .input__div div input, .input__div div select , .cnf__pass__div input {
     width: 250px;
     height: 30px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 5px;
     padding: 0 10px;
     font-size: 0.9rem;
@@ -304,12 +319,13 @@ hr{
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .auth__btn button{
     width: 100px;
-    height: 30px;
-    background-color: blue;
+    padding: 10px ;
+    background-color: var(--main-text-color);
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -320,6 +336,25 @@ hr{
     margin: 0 10px;
     text-transform: uppercase;
 }
+
+.auth__btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: var(--sub-bg-color);
+    padding: 10px 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.auth__btn .back_btn{
+    background-color: var(--main-text-color)
+}
+
 .outer__mobile__div    {
     display: flex;
     align-items: center;
@@ -339,7 +374,7 @@ hr{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 40px;
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -357,11 +392,10 @@ hr{
     cursor: pointer;
 }
 
-.sub__text a:hover{
-    background-color: var(--primary-btn-hover-color);
-}
+
 
 .final__details__div {
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -377,13 +411,15 @@ hr{
     align-items: center;
     width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--nav-color);
 
 }
 
 .final__details__div div {
-    padding: 10px 100px 10px 30px;
+    padding: 10px 15% 10px 30px;
 }
+
+
 
 .final__details__div div span   {
     color: var(--sub-text-color);
@@ -392,7 +428,7 @@ hr{
 .final__details__div div:nth-child(1) {
     font-size: 1.2rem;
     font-weight: 500;
-    background-color: black;
+    background-color: var(--main-text-color);
     color: var(--tertiary-text-color);
 }
 
@@ -400,12 +436,16 @@ hr{
     font-size: 1rem;
     font-weight: 500;
     background-color: var(--nav-color);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--main-text-color);
+}
+.final__details__div div:nth-child(4)   {
+    padding: 10px 13.5% 10px 30px;
+    border-bottom: 1px solid var(--main-bg-color);
 }
 
 .final_bill_table_div {
     width: 100%;
-    height: 100px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -414,35 +454,55 @@ hr{
 .final_bill_table_div table {
     width: fit-content;
     height: fit-content;
+    
 }
 
 .final_bill_table_div table tr th{
-
-
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: var(--sub-bg-color);
+    color: var(--tertiary-text-color);
 }
 
 .final_bill_table_div table tr td {
-
-
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-collapse: collapse;
+    border: 2px solid var(--main-text-color);
 }
 
 .payment_mode_div   {
     background-color: var(--nav-color);
     width: 100%;
     min-height: 100px;
-
 }
+.payment_mode_div div p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px 70px;
+    color: var(--sub-bg-color);
+}
+.payment_mode_div div hr  {
+    width: 94%;
+    margin-left:  70px;
+    border: 1px solid var(--main-text-color);
+    margin-bottom: 30px;
+}
+
 .payment_mode_input {
     width: 60%;
     margin: 0 auto;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--nav-color);
 }
 
 .payment_mode_input span {
     font-size: 1rem;
     font-weight: 400;
     padding-right: 20px;
+    color: var(--main-text-color)
 }
 
 
@@ -451,18 +511,7 @@ hr{
     cursor: pointer;
 }
 
-.auth__btn a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    background-color: var(--sub-bg-color);
-    padding: 10px 15px;
-    margin-left: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 
 /* --------------  Payment Screen--------------------- */
 
@@ -475,18 +524,21 @@ hr{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 10px;
+    padding: 20px 30px;
     font-size: 2rem;
     font-weight: 500;
-    background-color: var(--nav-color);
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
 }
 
 .transaction_heading    {
-    width: 100%;
+    width: 99%;
+    margin: 0 auto;
+    border-radius: 5px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 12px 10px;
+    padding: 12px 30px;
     font-size: 1.3rem;
     font-weight: 500;
     background-color: var(--sub-bg-color);
@@ -507,7 +559,7 @@ hr{
     padding: 20px 20px;
     font-size: 1.1rem;
     font-weight: 500;
-    border: 1px solid var(--nav-text-color);
+    border: 2px solid var(--nav-color);
     border-collapse: collapse;
     background-color: var(--nav-text-color);
     color: var(--tertiary-text-color);
@@ -515,8 +567,34 @@ hr{
 
 
 .slip__table tr td {
-    background-color: var(--tertiary-text-color);
+    background-color: var(--main-bg-color);
     color: var(--nav-text-color);
 }
 
+/* ------------COnfirmation Page---------------------------- */
+.rc_heading {
+    width: 100%;
+    border-radius: 0;
+}
 
+.details_div {
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+.details_div h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 30px;
+    color: var(--sub-bg-color);
+}
+
+.details_div p  {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 5px 0;
+    color: black;
+}
