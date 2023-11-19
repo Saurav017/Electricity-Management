@@ -58,7 +58,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: blue;
+    color: var(--nav-hover-color);
 }
 
 header div {
@@ -754,4 +754,30 @@ hr{
     font-weight: 500;
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+
+/* complain status */
+
+.input__div textarea {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--main-text-color);
+    resize: none;
+}
+
+
+.ebill__div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #87488A;
+    font-weight: 500;
 }

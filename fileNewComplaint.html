@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="./styles.css" rel="stylesheet">
+    <title>File New Complaint</title>
+</head>
+<body>
+    <header>
+        <div class="ebill__div">
+            <p>Quick E-Bill</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="register.html">Home</a></li>
+                <li><a href="payBill.html">Pay Bill</a></li>
+                <li><a href="fileNewComplaint.html">Register Complaints</a></li>
+                <li><a href="checkComplaintStatus.html">Complaint Status</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>Welcome   CustName</p>
+            <a href="register.html">Logout</a>
+        </div>
+    </header>
+    <main>
+        <div class="heading">
+            <p>File new Complaint</p>
+        </div>
+
+        <div>
+            <form>
+                <div class="input__div">
+                    <div>                
+                        <label>Complaint/Service Type: </label>
+                        <select name="STREET LIGHT RELATED" id="STREET LIGHT RELATED" >
+                            <option value="STREET LIGHT RELATED">STREET LIGHT RELATED</option>
+                            <option value="STREET LIGHT RELATED">B</option>
+                            <option value="STREET LIGHT RELATED">C</option>
+                            <option value="STREET LIGHT RELATED">STREET LIGHT RELATED</option>
+                        </select>
+        
+                    </div>
+                    <div>
+                        <label>Landmark: </label>
+                        <input type="text" placeholder="Landmark" required>
+                    </div>
+                </div>
+                <div class="input__div">
+                    <div>                
+                        <label>Category: </label>
+                        <select name="STREET LIGHT-NOT SWITCHED ON" id="STREET LIGHT-NOT SWITCHED ON" >
+                            <option value="STREET LIGHT-NOT SWITCHED ON">STREET LIGHT-NOT SWITCHED ON</option>
+    
+                            <option value="STREET LIGHT BROKEN">2</option>
+                            <option value="NEW STREET LIGHT ">3</option>
+                        </select>
+    
+                    </div>
+                    <div>
+                        <label>Consumer Number: </label>
+                        <input type="number" placeholder="Consumer Number">
+                    </div>
+                </div>
+
+                <div class="input__div">
+                    <div>                
+                        <label>Contact Person: </label>
+                        <input type="text" name="" id="" placeholder="Contact Person" required>
+                    </div>
+                    <div>
+                        <label>Problem Description: </label>
+                        <textarea name="" id="" cols="40" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <div class="input__div">
+                    <div>                
+                        <label>Mobile Number: </label>
+                        <input type="number" name="" id="" placeholder="Mobile Number" required>
+                    </div>
+                    <div>
+                        <label>Address: </label>
+                        <textarea name="" id="" cols="40" rows="5" required></textarea>
+                    </div>
+                </div>
+                <div class="auth__btn ">
+                    <button type="reset">Cancel</button>
+                    <a href="#">Submit Complaint</a>
+                </div>
+            </form>
+        </div>        
+    </main>
+</body>
+</html>
