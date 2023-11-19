@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="./styles.css" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Payment Screen</title>
 </head>
 <body>
     <header>
@@ -30,48 +30,48 @@
         <div class="heading">
             <p>Payment Screen</p>
         </div>
-        <section>
+        <section class="payment_screen_div">
             <div class="sub_heading">
                 Pay by Credit Card
             </div>
 
             <div class="img_div">
-
+                <img src="./assets/visa-mastercard.webp" alt="cards">
             </div>
 
             <!-- form div -->
-            <div>
-                <div class="input_div">
+            <div class="payment_form_div">
+                <div class="payment_input_div">
                     <label>Card Number</label>
-                    <div>
+                    
                         <input type="number" name="" id="" placeholder="Enter card number">
-                    </div>
+                    
                 </div>
-                <div>
+                <div class="date_input_div">
                     <!-- making grid -->
-                    <div class="input_div">
+                    <div class="payment_input_div">
                         <label>Expiration Date</label>
-                        <div>
+                        <div class="payment_input_subdiv">
                             <input type="number" name="" id="" placeholder="Month">
                             <input type="number" name="" id="" placeholder="Year">
                         </div>
                     </div>
                     <!-- another one -->
-                    <div class="input_div">
+                    <div class="payment_input_div">
                         <label>CVV/CVC</label>
-                        <div>
+                        
                             <input type="number" name="" id="">
-                        </div>
+                    
                     </div>
                 </div>
-                <div>
+                <div class="payment_input_div">
                     <label>Card Holder Name</label>
                     <input type="text" name="" id="" placeholder="Enter card holder name">
                 </div>
-                <a href="#"> Make Payment</a>
+                <a href="paymentSuccessPage.html" class="make_payment_btn"> Make Payment</a>
+                <a href="payBill.html" class="cancel_payment_btn">Cancel</a>
 
-
-            <div >
+            <div class="payment_amount_span" >
                 <p>Payment Amount: 	₹2028.00</p>
             </div>
         </section>

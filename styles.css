@@ -516,6 +516,135 @@ hr{
 /* --------------  Payment Screen--------------------- */
 
 
+.sub_heading    {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--sub-bg-color);
+    border-bottom: 2px solid var(--sub-bg-color);
+    cursor: pointer;
+}
+
+.payment_form_div   {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.payment_input_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0;
+    color: black;
+}
+
+
+.payment_input_div label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+
+
+.payment_input_div input {
+    width: 100% ;
+    padding: 13px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+.payment_input_subdiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date_input_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date_input_div div input {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.make_payment_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 13px 0;
+    text-decoration: none;
+    color: black;
+    background-color: #F5D588;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.cancel_payment_btn {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.payment_screen_div {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.payment_amount_span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 300px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: black;    
+    background-color: #D9EDF7;
+    position: absolute;
+    right: 30%;
+}
+.img_div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.img_div img {
+    width: 15%;
+    height: 15%;
+    object-fit: cover;
+}
+
+
 /* --------------------Payment Done Successfully------------------------- */
 
 
@@ -597,4 +726,32 @@ hr{
     font-weight: 600;
     padding: 5px 0;
     color: black;
+}
+
+
+
+/* ----------------------print receipt ------------------------------ */
+.print_rec_div{
+    height:30px;
+    width:49.99%;
+    background-color: var(--nav-hover-color);
+    color: white;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 5px;
+    border-radius: 2px;;
+}
+
+.print_rec_table, .print_rec_table tr{
+    width:50%;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.print_rec_table tr td{
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
